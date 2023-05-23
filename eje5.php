@@ -12,29 +12,19 @@
     echo "<tr>";
     $a = 1;
     
-    for($i=1; $a<=10; $i++)
+    for($i=1; $i<=10; $i++)
     {
         echo "<td>";
-        echo "$a";
-        $a = $a + 1;
+        echo "$i";
+        for($j=0; $j < 10; $j++)
+        {
+            echo "<tr>";
+            echo $j;
+        }
+        
     }
     
-    $b = 1;
-    for($i=1; $b<=10; $i++)
-    {
-        echo "<tr>";
-        echo "<td>";
-        echo "$b";
-        $b = $b + 1;
-    }
     
-    $c = "$a x $b";
-    for($i=1; $c<=100; $i++)
-    {
-        echo "<tr>";
-        echo "<td>";
-        echo "$c";
-    }
 ?>
 
 <table>
